@@ -1,20 +1,13 @@
 <!doctype html>
 <html>
 	<head>
-    <meta charset="utf-8">
-
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-    </style>
-
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>QA</title>
+		<title>Qualidade de Software</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/style.css">
+		<link rel="stylesheet" href="css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -30,66 +23,189 @@
 	</head>
 	<body>
 		<div class="reveal">
-      <div class="slides">
-<!--   Marina sua tarefa para o próximo TreC será desenvolver uma apresentação(visual e oral)
+			<div class="slides">
+				<section>
+					Qualidade de Software: Como e Porquê?
+				</section>
 
-sobre sua palestra no DevFest.
+				<section>
+					Marina Limeira
+					<ul>
+						<li>Ciência da Computação</li>
+						<li>Desenvolvedora *codeminer*</li>
+						<li><a href="http://marinalimeira.com/">marinalimeira.com</a></li>
+					</ul>
+				</section>
 
-Como nem todos da turma conhecem o assunto seu objetivo será construir um
+				<section>
+					Rails Girls Maceió \o/
+					<h2><a href="http://railsgirls.com/maceio">railsgirls.com/maceio</a></h2>
+				</section>
 
-planejamento em que leigos possam entender o que é dito, assim como incentivá­los a
+				<section>
+					<h2>Qualidade: pra quem?</h2>
+				</section>
 
-assistir sua palestra no evento, criar uma propaganda. A apresentação deve ter 5 minutos
+				<section>
+					<h2>Usuário</h2>
+				</section>
 
-com 3 minutos para apresentação.
+				<section>
+					<h2>Desenvolvedor</h2>
+				</section>
 
-Lembre de usar o que foi dado       -->
-<section><h1>Qualidade de Software</h1>
-        <h1 >Como? Por quê?</h1>
-</section>
-<section>
-  <!-- <h2>Oi!</h2> -->
-  <h3>
-    <span class="pink-border"><img src="images/sassyLady.png" alt="sassyLady">&nbsp &nbsp &nbsp &nbspPrazer, Marina Limeira.</span></h3>
-</section>
+				<section>
+					<h2>Revisão de Código</h2>
+				</section>
 
-<!-- <section> -->
-<!--   <!&#45;&#45; <h2>Oi!</h2> &#45;&#45;> -->
-<!--   <h3 class="super&#45;title"> -->
-<!--     <img src="images/sassyLady.png" alt="sassyLady">&#38;nbsp &#38;nbsp &#38;nbsp &#38;nbsp &#38;nbsp &#38;nbsp &#38;nbsp &#38;nbsp Prazer, Marina.</h3> -->
-<!-- </section> -->
+				<section>
+					<h2>Pull Requests</h2>
+				</section>
 
-<section>
-  <div class="remark-slide-content middle hljs-default">
-    <h1><span class="small-media">
-        <span class="red-border"><a href="https://smallmedia.org.uk/" >Ciência da Computação</a></span> <img src="images/ufal-logo.png" alt="small media"></span></h1>
-    <!-- <h1 > -->
-      <!-- <span class="small&#45;media"><span class="red&#45;border"><strong>Ciência da Computação</strong> <img src="images/ufal&#45;logo.png" stype="width: 100px;" alt="small media"></span></span> -->
-        <!-- <img src="images/floppy.png" alt="team"> -->
-    </h1>
-    <h1><span class="small-media">
-        <span class=""><a href="https://smallmedia.org.uk/" style="font-size: 1.8em;">CodeMiner 42</a></span> <img src="images/codeminer-logo.png" alt="small media"></span></h1></div>
-</section>
-        <section><h1 class="blue">Analista de Qualidade de Software</section>
-          <section><div >
-              <!-- <blockquote> -->
-<h3 ><span class="super-title">Mas e se a minha empresa não tem?</span></h3>
-<!-- </blockquote> -->
-<h3 id="-span-class-blockquote-footer-melanie-mitchel-span-"><span class="blockquote-footer"> <img src="images/thinking_face.png" alt="small media"></span></h3></div></section>
-        <section><h3>Automação de testes</h3>
-          <br />
-          <img src="images/computer.png" alt="computer">
-        </section>
-        <section data-background="#fff"><img src="images/test_pyram.png" alt="" /></section>
-        <section data-background="#fff"><img src="images/test_pyramSS.png" alt="" /></section>
-        <!-- <section data&#45;background="#fff"><img src="images/test_pyramH.png" alt="" /></section> -->
-        <!-- <section>Entrega Contínua</section> -->
-        <section><h3>Revisão de código<img src="images/exclamacao.png" alt="small media"></h3></section>
-        <section><h2 class="blue">Obrigada!</h2>
-          <br /><br /><h3>Nos vemos no <img style="width:470px;" src="images/gdg_devfest_nordeste.png" alt="" />!</h3>
-         
-          </span>
-        </section>
+				<section>
+					Pessoas mais experientes dando feedback sobre seu código
+				</section>
+
+<!--manual testing cannot cover anything
+code withour test is buggy and bad
+"unit testing feels frustrating when u r developing a new project becase it feels like its
+slowing u down and doesnt feels like the code all that complex any way, but u need to remember
+that after only a few weeks of developmetng ur time will shift, you wont spent most of ur time
+making changes in existing code and making changing in existing code is a LOT faster than changing
+untested code"
+-->
+				<section>
+					<h2>Documentação</h2>
+					<h3>README.md</h3>
+				</section>
+
+				<section>
+					<h2>Commits!</h2>
+					<h3>bom commit x PÉSSIMO commit</h3>
+				</section>
+
+				<section>
+					Imagine que todo dia tem um integrante novo no time...
+				</section>
+
+				<section>
+					Se imagine daqui a 6 meses adicionando uma funcionalidade nova ou tendo que refatorar
+				</section>
+
+				<section>
+					Testes!
+				</section>
+
+				<section>
+					<h2>Isso é papel do QA...</h2>
+					<h3>Tá, mas o seu time tem QA?</h3>
+				</section>
+
+				<section>
+					Funcionalidade nova, como testar?
+				</section>
+
+				<section>
+					<img src="images/fill-form.gif">
+				</section>
+
+				<section>
+					Arrange. Act. Assert.
+				</section>
+
+				<section>
+					piramide: unitário > funcional > aceitação
+				</section>
+
+				<section>
+					<h2>Teste Unitário</h2>
+					<h3>Baby steps</h3>
+					<h3>Mocks</h3>
+				</section>
+
+				<section>
+					<h2>Teste de integração</h2>
+				</section>
+
+				<section>
+					Se está difícil para testar, REFATORE!
+				</section>
+
+				<section>
+					Antes ou depois, MAS TESTE!
+				</section>
+
+				<section>
+					Teste de uma aplicação MVC
+				</section>
+
+				<section>
+					<h2>Model</h2>
+					<h2>View</h2>
+					<h2>Controller</h2>
+				</section>
+
+				<section>
+					<h2>Model</h2>
+					<h3 class="fragment" data-fragment-index="0">Relacionamentos estão ok?</h3>
+				</section>
+
+				<section>
+					<h2>Controller</h2>
+					<h3 class="fragment" data-fragment-index="0">retorno 422 quando o usuário não pode acessar a página?</h3>
+				</section>
+
+				<section>
+					<h2>View</h2>
+					<h3 class="fragment" data-fragment-index="0">o usuário tem a mensagem de erro correta?</h3>
+				</section>
+
+				<section>
+					<h2>Testes de Integração</h2>
+					<h3 class="fragment" data-fragment-index="0">tá acontecendo o que o cliente quer?</h3>
+				</section>
+
+				<section>
+					<h2>Integração Contínua</h2>
+				</section>
+
+				<section>
+					Só vai para produção se estiver tudo ok!
+				</section>
+
+				<section>
+					Entrega Contínua
+				</section>
+
+				<section>
+					TravisCI
+					Jenkins
+					SnapCI
+					SemaphoreCI
+					CircleCI
+				</section>
+
+				<section>
+					Sem CI nem testes:
+					nova funcionalidade - testada individualmente - tudo ok - produção
+					E o resto da aplicação?
+				</section>
+
+				<section>
+					Com CI e testes:
+					nova funcionalidade - testada indivualmente - tudo ok - testes ok - produção
+					resto da aplicação - TUDO OK
+				</section>
+
+				<section
+					<h2>Referências</h2>
+					http://betterspecs.org/br/
+				</section>
+
+				<section>
+					Obrigada!
+					<a href="https://twitter.com/marinalimeira_">@marinalimeira_</a>
+				</section>
 			</div>
 		</div>
 
@@ -97,12 +213,9 @@ Lembre de usar o que foi dado       -->
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-        history: true,
-        transition: 'none',
+				history: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },

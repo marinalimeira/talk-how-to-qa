@@ -7,10 +7,10 @@
 		<title>Qualidade de Software</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/github.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,185 +25,254 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					Qualidade de Software: Como e Porquê?
+					<h1>Qualidade de Software: Como e Porquê?</h1>
 				</section>
 
 				<section>
-					Marina Limeira
-					<ul>
-						<li>Ciência da Computação</li>
-						<li>Desenvolvedora *codeminer*</li>
-						<li><a href="http://marinalimeira.com/">marinalimeira.com</a></li>
-					</ul>
-				</section>
+        <h2>Marina Limeira</h2>
+        <h2 class="about">Ciência da Computação <img src="images/ufal.png" width="30px" alt=""></h2>
+        <h2 class="about">Desenvolvedora <img src="images/codeminer.png" alt=""></h2>
+        <h2 class="about">Mozillian</h2>
+        <h2 style="font-size: 1.3em;"><a href="http://www.marinalimeira.com">marinalimeira.com</a></h2>
+      </section>
 
 				<section>
-					Rails Girls Maceió \o/
+					<h2><img src="images/rg.png" width="80px"alt=""> Rails Girls Maceió \o/</h2>
 					<h2><a href="http://railsgirls.com/maceio">railsgirls.com/maceio</a></h2>
 				</section>
 
 				<section>
-					<h2>Qualidade: pra quem?</h2>
+					<h1>Qualidade: pra quem?</h1>
 				</section>
 
 				<section>
-					<h2>Usuário</h2>
+					<h1>Usuário</h1>
+					<h2 class="fragment" data-fragment-index="1">Experiência</h2>
+					<h2 class="fragment" data-fragment-index="2">Segurança</h2>
 				</section>
 
 				<section>
-					<h2>Desenvolvedor</h2>
+					<h1>Desenvolvedor</h1>
+					<h2 class="fragment" data-fragment-index="1">Legível</h2>
+					<h2 class="fragment" data-fragment-index="2">Reusável</h2>
 				</section>
 
 				<section>
-					<h2>Revisão de Código</h2>
+					<h1>Cliente</h1>
+					<h2 class="fragment" data-fragment-index="1">Entregue no prazo</h2>
+					<h2 class="fragment" data-fragment-index="2">Atenda suas especificações</h2>
 				</section>
 
 				<section>
-					<h2>Pull Requests</h2>
+					<h1>O que faz um software de qualidade</h1>
+					<h1 class="fragment" data-fragment-index="1">no ponto de vista do desenvolvedor?</h1>
 				</section>
 
 				<section>
-					Pessoas mais experientes dando feedback sobre seu código
-				</section>
-
-<!--manual testing cannot cover anything
-code withour test is buggy and bad
-"unit testing feels frustrating when u r developing a new project becase it feels like its
-slowing u down and doesnt feels like the code all that complex any way, but u need to remember
-that after only a few weeks of developmetng ur time will shift, you wont spent most of ur time
-making changes in existing code and making changing in existing code is a LOT faster than changing
-untested code"
--->
-				<section>
-					<h2>Documentação</h2>
-					<h3>README.md</h3>
+					<h1>Documentação</h1>
+					<h2 class="fragment" data-fragment-index="1">README.md</h2>
 				</section>
 
 				<section>
-					<h2>Commits!</h2>
-					<h3>bom commit x PÉSSIMO commit</h3>
+					<pre>
+						<code data-trim data-noescape>
+Cenário: Cadastro de Usuário
+Quando eu inserir meu nome
+E uma senha
+E clicar no botão de registro
+Então eu devo ser redirecionado para o menu principal
+						</code>
+					</pre>
 				</section>
 
 				<section>
-					Imagine que todo dia tem um integrante novo no time...
+					<h1>Bons commits</h1>
+					<h2>
+						<em class="fragment" data-fragment-index="1" style="color: #ffdaab;">update class</em>
+						<strong class="fragment" data-fragment-index="2">x</strong>  <br>
+						<em class="fragment" data-fragment-index="3" style="color: #ffdaab;">Rename TestClass to TestMessage</em>
+					</h2>
 				</section>
 
 				<section>
-					Se imagine daqui a 6 meses adicionando uma funcionalidade nova ou tendo que refatorar
+					<h2>Imagine que toda semana aparece uma pessoa nova no time...</h2>
 				</section>
 
 				<section>
-					Testes!
+					<h2>Se imagine daqui a 6 meses adicionando uma funcionalidade nova ou tendo que refatorar...</h2>
 				</section>
 
 				<section>
-					<h2>Isso é papel do QA...</h2>
-					<h3>Tá, mas o seu time tem QA?</h3>
+					<h1>Testes!</h1>
 				</section>
 
 				<section>
-					Funcionalidade nova, como testar?
+					<h1>Isso é papel do QA...</h1>
+					<h3 class="fragment" data-fragment-index="1">Tá, mas o seu time tem QA?</h3>
+					<aside class="notes">voces sabem o que é qa?</aside>
 				</section>
 
 				<section>
-					<img src="images/fill-form.gif">
+					<h1>Não.</h1>
 				</section>
 
 				<section>
-					Arrange. Act. Assert.
+					<img src="images/exlposion.gif"  width="1000px" alt="">
+					<h1 style="z-index: 2; position: fixed; top: 200px; left: 200px; color: #F50057; font-weight: 700px;"
+							class="fragment" data-fragment-index="1">
+						seu usuário
+					</h1>
 				</section>
 
 				<section>
-					piramide: unitário > funcional > aceitação
+					<h2>Funcionalidade nova, como testar?</h2>
 				</section>
 
 				<section>
-					<h2>Teste Unitário</h2>
-					<h3>Baby steps</h3>
-					<h3>Mocks</h3>
+					<h1>Teste manual</h1>
 				</section>
 
 				<section>
-					<h2>Teste de integração</h2>
+					<img src="images/fill-form.gif" width="800px">
 				</section>
 
 				<section>
-					Se está difícil para testar, REFATORE!
+					<img src="images/sleepy.gif" width="1000px" alt="">
 				</section>
 
 				<section>
-					Antes ou depois, MAS TESTE!
+					<h1>Automação<strong class="fragment" data-fragment-index="1">!</strong></h1>
 				</section>
 
 				<section>
-					Teste de uma aplicação MVC
+					<pre>
+						<code data-trim data-noescape>
+fill_in 'Name', with: 'Marina'
+fill_in 'Password', with: 'senha123'
+click_button 'register'
+						</code>
+					</pre>
+					<h2>Ruby + Capybara</h2>
 				</section>
 
 				<section>
-					<h2>Model</h2>
-					<h2>View</h2>
-					<h2>Controller</h2>
+					<img src="images/dancing.gif" width="800px" alt="">
 				</section>
 
 				<section>
-					<h2>Model</h2>
-					<h3 class="fragment" data-fragment-index="0">Relacionamentos estão ok?</h3>
+					<h1>Não garante 100%,</h1>
+					<h2>até porque você não pensou em todos os casos</h2>
 				</section>
 
 				<section>
-					<h2>Controller</h2>
-					<h3 class="fragment" data-fragment-index="0">retorno 422 quando o usuário não pode acessar a página?</h3>
+					<img src="images/pyramid.png" alt="">
+					<h1 style="top: 100px; left: 290px; color: #ef6c00;" class="fragment h1-img" data-fragment-index="1">
+						Interface
+					</h1>
+
+					<h1 style="top: 250px; left: 280px; color: #ef6c00;" class="fragment h1-img" data-fragment-index="2">
+						Integração
+					</h1>
+
+					<h1 style="top: 400px; left: 300px; color: #ef6c00;" class="fragment h1-img" data-fragment-index="3">
+						Unitário
+					</h1>
 				</section>
 
 				<section>
-					<h2>View</h2>
-					<h3 class="fragment" data-fragment-index="0">o usuário tem a mensagem de erro correta?</h3>
+					<img src="images/pyramid-manual.png" alt="">
+					<h1 style="top: 100px; left: 280px; color: #F50057;" class="fragment h1-img" data-fragment-index="1">
+						MANUAL
+					</h1>
 				</section>
 
 				<section>
-					<h2>Testes de Integração</h2>
-					<h3 class="fragment" data-fragment-index="0">tá acontecendo o que o cliente quer?</h3>
+					<h1>Teste Unitário</h1>
+					<h2 class="fragment" data-fragment-index="1">TDD (Baby steps)</h2>
+					<h2 class="fragment" data-fragment-index="2">Mocks</h2>
 				</section>
 
 				<section>
-					<h2>Integração Contínua</h2>
+					<h1>Teste de uma aplicação M.V.C.</h1>
+					<img src="images/Ruby_on_Rails-logo.png" width="200px" alt="">
+					<img src="images/angular.png" width="200px" alt="">
+					<img src="images/cake.png" width="200px" alt="">
 				</section>
 
 				<section>
-					Só vai para produção se estiver tudo ok!
+					<h1>Model</h1>
+					<h2 class="fragment" data-fragment-index="0">Relacionamentos estão ok?</h2>
 				</section>
 
 				<section>
-					Entrega Contínua
+					<h1>Controller</h1>
+					<h2 class="fragment" data-fragment-index="0">Retorno 403 quando o usuário não pode acessar a página?</h2>
 				</section>
 
 				<section>
-					TravisCI
-					Jenkins
-					SnapCI
-					SemaphoreCI
-					CircleCI
+					<h1>View</h1>
+					<h2 class="fragment" data-fragment-index="0">O usuário tem a mensagem de erro correta?</h2>
 				</section>
 
 				<section>
-					Sem CI nem testes:
-					nova funcionalidade - testada individualmente - tudo ok - produção
-					E o resto da aplicação?
+					<h1>Testes de Interface</h1>
+					<h2 class="fragment" data-fragment-index="0">O usuário consegue realmente utilizar a plataforma?</h2>
 				</section>
 
 				<section>
-					Com CI e testes:
-					nova funcionalidade - testada indivualmente - tudo ok - testes ok - produção
-					resto da aplicação - TUDO OK
-				</section>
-
-				<section
-					<h2>Referências</h2>
-					http://betterspecs.org/br/
+					<img src="images/selenium.gif" alt="">
 				</section>
 
 				<section>
-					Obrigada!
+					<img src="images/selenium.png" alt=""><h1>Selenium</h1>
+				</section>
+
+				<section>
+					<h1>Integração Contínua</h1>
+					<h2>a.k.a. Continuous Integration (CI)</h2>
+				</section>
+
+				<section>
+					<h1>Entrega contínua, implantação contínua...</h1>
+					<h2 class="fragment" data-fragment-index="0">Isso é tópico para outra conversa :)</h2>
+				</section>
+
+				<section>
+					<img src="images/travisci.png" height="100px" alt=""><br>
+					<img src="images/snapci.png" height="100px"  alt=""><br>
+					<img src="images/Jenkins.png" height="100px"  alt="">
+				</section>
+
+				<section>
+					<h1>$ git push</h1>
+					<h1>$ rspec</h1>
+					<h1>$ jasmine</h1>
+				</section>
+
+				<section>
+					<img src="images/build_passing.png" width="300px" alt="">
+				</section>
+
+				<section>
+					<img src="images/barney-confetti.gif" width="800px" alt="">
+				</section>
+
+				<section>
+					<h1>Só vai para produção se estiver tudo ok!</h1>
+				</section>
+
+				<section>
+					<h1>Resumindo,</h1>
+					<h2>faça testes e configure um serviço para integração contínua.</h2>
+				</section>
+
+				<section>
+					<h1>Faça o teste antes ou depois, MAS TESTE!</h1>
+					<h2 class="fragment" data-fragment-index="0">E lembre-se de executá-los.</h2>
+				</section>
+
+				<section>
+					<h1>Obrigada!</h1>
 					<a href="https://twitter.com/marinalimeira_">@marinalimeira_</a>
 				</section>
 			</div>
@@ -213,9 +282,13 @@ untested code"
 		<script src="js/reveal.js"></script>
 
 		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				transition: 'fade',
+				backgroundTransition: 'none',
 
+				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },

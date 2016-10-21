@@ -145,14 +145,30 @@ Então eu devo ser redirecionado para o menu principal
 				</section>
 
 				<section>
+					<img src="images/selenium.gif" alt="">
+				</section>
+
+				<section>
+					<img src="images/selenium.png" alt=""><h1>Selenium</h1>
+				</section>
+
+				<section>
 					<pre>
 						<code data-trim data-noescape>
-fill_in 'Name', with: 'Marina'
-fill_in 'Password', with: 'senha123'
-click_button 'register'
+When "eu inserir meu nome" do
+  fill_in 'Name', with: 'Marina'
+end
+
+When "uma senha" do
+  fill_in 'Password', with: 'senha123'
+end
+
+When "clicar no botão de registro" do
+  click_button 'register'
+end
 						</code>
 					</pre>
-					<h2>Ruby + Capybara</h2>
+					<h2>Ruby + Capybara + Cucumber</h2>
 				</section>
 
 				<section>
@@ -166,15 +182,15 @@ click_button 'register'
 
 				<section>
 					<img src="images/pyramid.png" alt="">
-					<h1 style="top: 100px; left: 290px; color: #ef6c00;" class="fragment h1-img" data-fragment-index="1">
+					<h1 style="top: 100px; left: 290px; font-weight: 900;" class="fragment h1-img" data-fragment-index="1">
 						Interface
 					</h1>
 
-					<h1 style="top: 250px; left: 280px; color: #ef6c00;" class="fragment h1-img" data-fragment-index="2">
+					<h1 style="top: 250px; left: 280px; font-weight: 900;" class="fragment h1-img" data-fragment-index="2">
 						Integração
 					</h1>
 
-					<h1 style="top: 400px; left: 300px; color: #ef6c00;" class="fragment h1-img" data-fragment-index="3">
+					<h1 style="top: 400px; left: 300px; font-weight: 900;" class="fragment h1-img" data-fragment-index="3">
 						Unitário
 					</h1>
 				</section>
@@ -220,14 +236,6 @@ click_button 'register'
 				</section>
 
 				<section>
-					<img src="images/selenium.gif" alt="">
-				</section>
-
-				<section>
-					<img src="images/selenium.png" alt=""><h1>Selenium</h1>
-				</section>
-
-				<section>
 					<h1>Integração Contínua</h1>
 					<h2>a.k.a. Continuous Integration (CI)</h2>
 				</section>
@@ -258,7 +266,7 @@ click_button 'register'
 				</section>
 
 				<section>
-					<h1>Só vai para produção se estiver tudo ok!</h1>
+					<h1>Feedback do projeto a cada alteração!</h1>
 				</section>
 
 				<section>
@@ -273,7 +281,7 @@ click_button 'register'
 
 				<section>
 					<h1>Obrigada!</h1>
-					<a href="https://twitter.com/marinalimeira_">@marinalimeira_</a>
+					<h2><a href="https://twitter.com/marinalimeira_">@marinalimeira_</a></h2>
 				</section>
 			</div>
 		</div>
